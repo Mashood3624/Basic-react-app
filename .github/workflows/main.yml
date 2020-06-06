@@ -37,4 +37,4 @@ jobs:
       run: npm i -g surge
       
     - name: Upload site
-      run: surge ./ http://basereactapp2020.surge.sh/ --token ${{secrets.SURGE_TOKKEN}}
+      run: surge ./build http://basereactapp2020.surge.sh/ --token ${{secrets.SURGE_TOKKEN}}
